@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                //git 'https://github.com/ajay-gidd/jenkins_practise.git'
-                echo "ajat"
+                git 'https://github.com/ajay-gidd/jenkins_practise.git'
+                //echo "ajat"
             }
         }
         stage('Build Code') {
