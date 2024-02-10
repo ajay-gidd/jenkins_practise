@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                //echo "Checkout the source code from the Git repository"
-                git 'https://github.com/ajay-gidd/jenkins_practise.git'
+                echo "Checkout the source code from the Git repository"
+                //git 'https://github.com/ajay-gidd/jenkins_practise.git'
                 //git 'https://github.com/yourusername/yourrepository.git'
             }
         }
