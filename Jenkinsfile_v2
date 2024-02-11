@@ -3,22 +3,19 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/ajay-gidd/jenkins_practise.git'
-                echo "ajat"
+                git 'https://github.com/BThangaraju/Jenkins.git'
             }
         }
         stage('Build Code') {
             steps {
                 sh "chmod u+x Prog1.py"
                 sh "./Prog1.py"
-                echo "ajat"
             }
         }
      stage('Test Code') {
             steps {
                 sh "chmod u+x Test.py"
                 sh "./Test.py"
-                echo "ajat"
             }
         }
     } 
